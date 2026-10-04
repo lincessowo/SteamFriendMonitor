@@ -1,0 +1,16 @@
+{
+  "Username": "",
+  "Password": "",
+  "SharedSecret": "",
+  "LogDirectory": "logs",
+  "DatabasePath": "friends.db",
+  "Protocol": "All",
+  "LoginID": null,
+  "LogInitialSnapshot": true,
+  "NotifyOnFriendOnline": true,
+  "ProxyType": "None",
+  "ProxyHost": "",
+  "ProxyPort": 0,
+  "ProxyUsername": "",
+  "ProxyPassword": ""
+}

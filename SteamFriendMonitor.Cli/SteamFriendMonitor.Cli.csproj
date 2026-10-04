@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+		<RootNamespace>SteamFriendMonitor</RootNamespace>
+		<AssemblyName>SteamFriendMonitor.Cli</AssemblyName>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<InvariantGlobalization>false</InvariantGlobalization>
+		<RollForward>LatestMajor</RollForward>
+		<Version>1.2.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SteamKit2" Version="3.4.0" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.0" />
+	</ItemGroup>
+
+	<!-- 复用核心代码（排除 Windows 专用的 GUI 认证器与自启动模块） -->
+	<ItemGroup>
+		<Compile Include="..\Core\**\*.cs" Exclude="..\Core\GuiAuthenticator.cs;..\Core\AutoStart.cs" />
+	</ItemGroup>
+
+</Project>

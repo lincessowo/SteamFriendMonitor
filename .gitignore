@@ -1,0 +1,9 @@
+bin/
+obj/
+publish/
+logs/
+session.*.token
+*.db
+*.db-wal
+*.db-shm
+config.json

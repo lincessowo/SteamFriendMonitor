@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net10.0-windows</TargetFramework>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ApplicationHighDpiMode>PerMonitorV2</ApplicationHighDpiMode>
+		<RootNamespace>SteamFriendMonitor</RootNamespace>
+		<AssemblyName>SteamFriendMonitor</AssemblyName>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<InvariantGlobalization>false</InvariantGlobalization>
+		<RollForward>LatestMajor</RollForward>
+		<Version>1.2.0.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- CLI 子项目有自己的入口，避免被本项目的默认通配符编译 -->
+		<Compile Remove="SteamFriendMonitor.Cli\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="SteamKit2" Version="3.4.0" />
+		<PackageReference Include="Microsoft.Data.Sqlite" Version="10.0.0" />
+	</ItemGroup>
+
+</Project>
