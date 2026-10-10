@@ -1,3 +1,7 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 namespace SteamFriendMonitor.UI;
 
 // 非本机绑定 WebSocket 接口前的强制倒计时确认（10 秒内无法确认，防手滑）

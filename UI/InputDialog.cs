@@ -1,3 +1,7 @@
+// This Source Code Form is subject to the terms of the Mozilla Public
+// License, v. 2.0. If a copy of the MPL was not distributed with this
+// file, You can obtain one at https://mozilla.org/MPL/2.0/.
+
 namespace SteamFriendMonitor.UI;
 
 // 登录验证用的轻量输入弹窗（SteamGuard 验证码等）
